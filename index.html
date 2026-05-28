@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body { font-family: sans-serif; text-align: center; background-color: #f0f2f5; padding: 20px; }
+        .btn {
+            display: block; width: 90%; padding: 15px; margin: 10px auto;
+            border: none; border-radius: 12px; color: white; font-weight: bold;
+            font-size: 16px; cursor: pointer; text-decoration: none;
+        }
+        .green { background-color: #28a745; }
+        .blue { background-color: #007bff; }
+        .red { background-color: #dc3545; } /* Красный цвет для кнопки назад */
+    </style>
+</head>
+<body>
+    <h2>Меню Скруджа</h2>
+    
+    <!-- Основные кнопки -->
+    <a href="#" class="btn green">📈 Подключить бота</a>
+    <a href="#" class="btn blue">💼 Профиль</a>
+    <a href="#" class="btn blue">📚 Задания</a>
+    <a href="#" class="btn blue">🔗 Топ рефоводов</a>
+    <a href="#" class="btn blue">🆘 Помощь</a>
+    
+    <!-- Кнопка назад -->
+    <a href="#" class="btn red" onclick="Telegram.WebApp.close()">⬅️ Назад</a>
+</body>
+</html>
